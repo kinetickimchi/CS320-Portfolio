@@ -72,28 +72,28 @@ public class Contact {
 
     // Setter functions with input validation
     public void setFirstName(String firstName) {
-        if (firstName.length() > 10 || firstName == null) {
+        if (firstName == null || firstName.length() > 10) {
             throw new IllegalArgumentException("firstName entry is not valid");
         }
         this.firstName = firstName;
     }
 
     public void setLastName(String lastName) {
-        if (lastName.length() > 10 || lastName == null) {
+        if (lastName == null || lastName.length() > 10) {
             throw new IllegalArgumentException("lastName entry is not valid");
         }
         this.lastName = lastName;
     }
 
     public void setPhoneNumber(String phoneNumber) {
-        if (phoneNumber.length() != 10 || phoneNumber == null) {
+        if (phoneNumber == null || phoneNumber.length() != 10) {
             throw new IllegalArgumentException("phoneNumber entry is not valid");
         }
         this.phoneNumber = phoneNumber;
     }
 
     public void setAddress(String address) {
-        if (address.length() > 30 || address == null) {
+        if (address == null || address.length() > 30) {
             throw new IllegalArgumentException("Address entry is not valid");
         }
         this.address = address;
