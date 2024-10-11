@@ -59,10 +59,6 @@ public class Appointment {
         this.date = date;
     }
 
-    public void setDescription(String description) {
-        if (description == null || description.length() > 50) {
-            throw new IllegalArgumentException("Description entry is not valid");
-        }
-        this.description = description;
-    }
+    // setDescription() method was removed. Rubric doesn't state description field needs to be updatable
+    
 }
